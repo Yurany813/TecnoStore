@@ -1,0 +1,39 @@
+.product-card {
+    border: 1px solid var(--color-secondary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: var(--color-primary);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+.card-price {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(147, 185, 216);
+    color: rgb(28, 26, 29);
+    padding: 1.875rem;
+}

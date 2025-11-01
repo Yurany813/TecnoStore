@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Marketplace</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loguin_empleados.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<a class="navbar-brand" href="index.html">TECNOSTORE 🛒</a>
+
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownInicio" role="button" 
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Inicio
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownInicio">
+                <a class="dropdown-item" href="sobre_nosotros.html">Sobre Nosotros</a>
+                <a class="dropdown-item" href="integrantes.html">Integrantes</a>
+                <a class="dropdown-item" href="diagrama.html">Entidad-Relación</a>
+                <a class="dropdown-item" href="codigo.html">Lógica</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="productos.html">Productos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="carrito.html">Carrito</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="registro.html">Registro</a>
+        </li>
+    </ul>
+
+  
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLogin" role="button" 
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Login
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownLogin">
+                <a class="dropdown-item" href="loguin_empleados.html">Empleados</a>
+                <a class="dropdown-item" href="loguin_usuarios.html">Usuarios</a>
+            </div>
+        </li>
+    </ul>
+</div>
+</nav>
+
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Login de Empleados</h2>
+
+    <form class="custom-form mx-auto" style="max-width: 400px;">
+        <div class="form-group">
+            <label for="usuario">Nombre de Empleado:</label>
+            <input type="text" class="form-control" id="usuario" required>
+        </div>
+        <div class="form-group">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" class="form-control" id="contrasena" required>
+        </div>
+        <button type="submit" class="btn btn-primary custom-btn btn-block">Iniciar Sesión </button>
+        <p class="text-center mt-3"><a href="registro.html" class="custom-link">¿No tienes cuenta? Regístrate aquí</a></p>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<footer>
+    <p>Yurany Galeano Osorio   📧yuranygaleanos@gmail.com celular:3002130639</p>
+    <p>Juan Pablo Montoya  📧jpablom@gmail.com celular: 3009820745</p>
+    <p>Daniel  📧daniel@gmail.com celular: 3234218941</p>
+</footer>
+
+</body>
+</html>

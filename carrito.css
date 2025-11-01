@@ -1,0 +1,30 @@
+
+
+.custom-table {
+    border: 1px solid var(--color-secondary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.custom-table .thead-dark th {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border-color: var(--color-dark);
+}
+
+.custom-table tfoot td {
+    border-top: 2px solid var(--color-primary);
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(152, 196, 238);
+    color: rgb(28, 26, 29);
+    padding: 1.875rem;
+}

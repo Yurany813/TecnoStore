@@ -1,0 +1,16 @@
+img {
+    display: flex;
+    width: 70%;
+    height: 400px;
+    text-align: center;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(152, 196, 238);
+        color: rgb(28, 26, 29);
+        padding: 1.875rem;
+    }
+    

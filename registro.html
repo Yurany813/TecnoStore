@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="images/formulario.png" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <img src="Imagenes/banner.jpg" alt="">
+        <h1>Registro de Usuarios</h1>
+    </header>
+  
+    <main>
+        <form action="">
+            <label for="lnom"> Nombre completo</label>
+            <input type="text" name="name" id="lnom" placeholder="Escriba su nombfre completo...">
+            <br>
+            <label for="Idir">Dirección</label>
+            <input type="text" name="dire" id="Idir" placeholder="Digite su dirección completa...">
+            <br>
+            
+            <label for="lmol">Número móvil</label>
+            <input type="tel" name="movil" id="lmol" placeholder="##########" pattern="[0-9]{10}">
+            <br>
+
+        <label for="lfec">Fecha de nacimiento</label>
+        <input type="date" name="fec_nac" id="lfec" min="1950-01-01" value="1991-09-14">
+        <br>
+
+        <label for="lcor">Correo</label>
+        <input type="email" name="email" id="lcor">
+        <br>
+
+        <label for="lcolor">Color favorito</label>
+        <input type="color" name="color" id="lcolor" value="#EB9588">
+        <br>
+
+        
+        <label for="lclave">Contraseña</label>
+        <input type="password" name="Clave" id="lclave">
+        <br>
+
+      
+            <fieldset>
+            <legend>Productos de interes</legend>
+            <input type="checkbox" name="tema1" id="ltema1" value="Deporte">
+            <label for="ltema1">Computadores</label>
+            <br>
+            <input type="checkbox" name="tema2" id="ltema2" value="Deporte">
+            <label for="ltema2">Celulares</label>
+            <br>
+            <input type="checkbox" name="tema3" id="ltema3" value="Deporte">
+            <label for="ltema3">Videojuegos</label>
+            <br>
+            <input type="checkbox" name="tema4" id="ltema4" value="Deporte">
+            <label for="ltema4">Accesorios</label>
+            <br>
+
+
+            
+        </fieldset>
+        <br>
+
+               <label for="lciudad">Ciudad de residencia</label>
+        <select name="ciudad" id="lciudad">
+            <option value="Medellín">Medellín</option>
+            <option value="Bogotá">Bogotá</option>
+            <option value="Barranquilla">Barranquilla</option>
+            <option value="Pereira">Pereira</option>
+           
+        </select>
+
+        <br>
+
+        <label for="lcomentarios">Sugerencias</label>
+        <br>
+        <textarea name="observaciones" id="lcomentarios" cols="30" rows="10" placeholder="Escriba su comentario.." spellcheck="true"></textarea>
+
+
+    
+
+    
+
+
+
+
+
+
+<br>
+
+           
+            <input type="submit" value="Enviar📤">
+            <input type="reset" value="Limpiar 🧹">
+
+
+        </form>
+    </main>
+    <footer>
+        <p>Yurany Galeano Osorio   📧yuranygaleanos@gmail.com celular:3002130639</p>
+        <p>Juan Pablo Montoya  📧jpablom@gmail.com celular: 3009820745</p>
+        <p>Daniel  📧daniel@gmail.com celular: 3234218941</p>
+    </footer>
+</body>
+</html>
