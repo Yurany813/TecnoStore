@@ -1,30 +1,400 @@
-
-
-.custom-table {
-    border: 1px solid var(--color-secondary);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+/* Reset y configuración base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.custom-table .thead-dark th {
-    background-color: var(--color-dark);
-    color: var(--color-light);
-    border-color: var(--color-dark);
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    color: #0d47a1;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #0d47a1 0%, #1565c0 100%) !important;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 12px rgba(13, 71, 161, 0.3);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff !important;
+    transition: transform 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-link {
+    color: #e3f2fd !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff !important;
+}
+
+.dropdown-menu {
+    background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+    border: none;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 0.5rem;
+}
+
+.dropdown-item {
+    color: #e3f2fd;
+    transition: all 0.3s ease;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    margin: 0.25rem 0.5rem;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+/* Container principal */
+.container {
+    flex: 1;
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 40px rgba(13, 71, 161, 0.15);
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Título */
+h2 {
+    color: #0d47a1;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2rem !important;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #1976d2, #64b5f6);
+    border-radius: 2px;
+}
+
+/* Tabla personalizada */
+.table-responsive {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(13, 71, 161, 0.1);
+    margin-bottom: 2rem;
+}
+
+.custom-table {
+    margin-bottom: 0;
+    background: white;
+}
+
+.custom-table thead {
+    background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%) !important;
+}
+
+.custom-table thead th {
+    color: white !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    padding: 1.2rem 1rem;
+    border: none;
+}
+
+.custom-table tbody tr {
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #e3f2fd;
+}
+
+.custom-table tbody tr:hover {
+    background-color: #f5f9ff;
+    transform: scale(1.01);
+    box-shadow: 0 2px 8px rgba(13, 71, 161, 0.1);
+}
+
+.custom-table tbody td {
+    padding: 1.2rem 1rem;
+    vertical-align: middle;
+    color: #0d47a1;
+    font-weight: 500;
 }
 
 .custom-table tfoot td {
-    border-top: 2px solid var(--color-primary);
+    padding: 1rem;
+    background-color: #f5f9ff;
+    font-size: 1.1rem;
+    border-top: 3px solid #1976d2;
 }
 
-.font-weight-bold {
-    font-weight: bold;
+.custom-table tfoot .font-weight-bold {
+    color: #0d47a1;
+    font-size: 1.3rem;
 }
+
+/* Botón eliminar */
+.custom-btn-danger {
+    background: linear-gradient(135deg, #e53935 0%, #d32f2f 100%);
+    border: none;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(229, 57, 53, 0.3);
+}
+
+.custom-btn-danger:hover {
+    background: linear-gradient(135deg, #d32f2f 0%, #c62828 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(229, 57, 53, 0.4);
+    color: white;
+}
+
+/* Select de método de pago */
+.custom-select {
+    border: 2px solid #90caf9;
+    border-radius: 10px;
+    padding: 0.75rem;
+    font-weight: 500;
+    color: #0d47a1;
+    background-color: #f5f9ff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.custom-select:focus {
+    outline: none;
+    border-color: #1976d2;
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(25, 118, 210, 0.1);
+}
+
+label[for="payment-method"] {
+    font-weight: 600;
+    color: #0d47a1;
+    margin-bottom: 0.5rem;
+    display: block;
+    font-size: 1.1rem;
+}
+
+/* Botones de acción principales */
+.custom-btn {
+    padding: 0.875rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-secondary.custom-btn {
+    background: linear-gradient(135deg, #64b5f6 0%, #42a5f5 100%);
+    color: white;
+}
+
+.btn-secondary.custom-btn:hover {
+    background: linear-gradient(135deg, #42a5f5 0%, #2196f3 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(66, 165, 245, 0.4);
+    color: white;
+}
+
+.btn-success.custom-btn {
+    background: linear-gradient(135deg, #66bb6a 0%, #43a047 100%);
+    color: white;
+}
+
+.btn-success.custom-btn:hover {
+    background: linear-gradient(135deg, #43a047 0%, #388e3c 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(67, 160, 71, 0.4);
+    color: white;
+}
+
+/* Contenedor de botones */
+.d-flex.justify-content-between {
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Footer */
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(152, 196, 238);
-    color: rgb(28, 26, 29);
-    padding: 1.875rem;
+    background: linear-gradient(90deg, #0d47a1 0%, #1565c0 100%);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top: auto;
+    box-shadow: 0 -4px 12px rgba(13, 71, 161, 0.2);
+}
+
+footer p {
+    margin: 0.75rem 0;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    transition: transform 0.3s ease;
+}
+
+footer p:hover {
+    transform: translateX(5px);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.custom-table tbody tr {
+    animation: slideIn 0.5s ease-out backwards;
+}
+
+.custom-table tbody tr:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.75rem 1rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+        margin-top: 1rem !important;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .custom-table thead th {
+        font-size: 0.8rem;
+        padding: 1rem 0.5rem;
+    }
+
+    .custom-table tbody td,
+    .custom-table tfoot td {
+        padding: 0.875rem 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .d-flex.justify-content-between {
+        flex-direction: column;
+    }
+
+    .custom-btn {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    footer {
+        font-size: 0.85rem;
+        padding: 1.5rem 1rem;
+    }
+
+    footer p {
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+        border-radius: 15px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .custom-table {
+        font-size: 0.85rem;
+    }
+
+    .custom-table thead th {
+        padding: 0.75rem 0.4rem;
+    }
+
+    .custom-btn-danger {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .custom-btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.75rem;
+        line-height: 1.6;
+    }
+}
+
+/* Efecto de precio destacado */
+.custom-table tfoot .font-weight-bold {
+    background: linear-gradient(135deg, #1976d2, #64b5f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Hover effect en toda la fila del tfoot */
+.custom-table tfoot tr:hover {
+    background-color: #e3f2fd;
+    transition: background-color 0.3s ease;
 }
